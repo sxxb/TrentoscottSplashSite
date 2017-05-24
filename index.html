@@ -13,9 +13,7 @@
 
 /** Body Styling **/
 
-    * {
-      box-sizing: border-box;
-    }
+
     body {
 
       background-color: #414141;
@@ -28,7 +26,7 @@
 /** Box Style **/
     .div1 {
       width: 50%;
-      height: 705px;
+      height: 100vh;
       background-color: #084a58;
       float: left;
       color: #fbfbfb;
@@ -36,14 +34,14 @@
     .div2 {
       width: 50%;
       float: left;
-      height: 705px;
+      height: 100vh;
       background-color: #ff7759;
       color: #414141;
     }
     .div3 {
       width: 50%;
       float: left;
-      height: 705px;
+      height: 100vh;
       background-color: #f0af13;
       clear: right;
       color: #414141;
@@ -51,7 +49,7 @@
     .div4 {
       width: 50%;
       float: left;
-      height: 705px;
+      height: 100vh;
       background-color: #4a87b2;
       color: #fbfbfb;
     }
@@ -176,23 +174,18 @@
         [class*="div"] {
             width: 100%;
         }
-        .div4 {
-          height: 550px;
-        }
       }
 
     @media only screen and (min-width: 768px) {
         /* For Laptop: */
         [class*="div"] {
           width: 50%;
-          height: 705px;
         }
       }
     @media only screen and (min-width: 1440px) {
       /* For 1440px monitors */
       [class*="div"] {
         width: 50%;
-        height: 768px;
       }
     }
 
