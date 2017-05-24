@@ -14,9 +14,10 @@
     }
     body {
 
-      background-color: #322f2e;
+      background-color: #414141;
       margin: 0px;
       font-family: 'Open Sans', sans-serif;
+      cursor: default;
     }
 
 
@@ -33,13 +34,15 @@
       float: left;
       height: 700px;
       background-color: #ff7759;
+      color: #414141;
     }
     .div3 {
       width: 50%;
       float: left;
       height: 700px;
-      background-color: #e77575;
+      background-color: #f0af13;
       clear: right;
+      color: #414141;
     }
     .div4 {
       width: 50%;
@@ -80,7 +83,8 @@
     p {
 
     }
-    a:link {
+  /** Link Styles **/
+    a.linkone:link {
       font-size: 22px;
       text-align: center;
       font-style: normal;
@@ -89,12 +93,54 @@
       -webkit-transition: color 2s; /* Safari */
       transition: color 2s;
     }
-    a:link:hover {
+    a.linkone:link:hover {
       color: #ff9f8a;
       -webkit-transition: color 1s; /* Safari */
       transition: color 1s;
-
     }
+    a.linktwo:link {
+      font-size: 22px;
+      text-align: center;
+      font-style: normal;
+      color: #fbfbfb;
+      text-decoration: none;
+      -webkit-transition: color 2s; /* Safari */
+      transition: color 2s;
+    }
+    a.linktwo:link:hover {
+      color: #ff9f8a;
+      -webkit-transition: color 1s; /* Safari */
+      transition: color 1s;
+      }
+    a.linkthree:link {
+      font-size: 22px;
+      text-align: center;
+      font-style: normal;
+      color: #414141;
+      text-decoration: none;
+      -webkit-transition: color 2s; /* Safari */
+      transition: color 2s;
+    }
+    a.linkthree:link:hover {
+      color: #4a87b2;
+      -webkit-transition: color 1s; /* Safari */
+      transition: color 1s;
+    }
+    a.linkfour:link {
+      font-size: 22px;
+      text-align: center;
+      font-style: normal;
+      color: #fbfbfb;
+      text-decoration: none;
+      -webkit-transition: color 2s; /* Safari */
+      transition: color 2s;
+    }
+    a.linkfour:link:hover {
+      color: #f0af13;
+      -webkit-transition: color 1s; /* Safari */
+      transition: color 1s;
+    }
+
   </style>
 </head>
 
@@ -103,7 +149,7 @@
 <div class="div1">
   <h1>Wildfire</h1>
   <h2>The All in One Safety Tool for Emergencies</h2>
-  <h3><a href="trentoscott.co/Wildfire"> Prototype</a></h3>
+  <h3><a class="linkone" href="trentoscott.co/Wildfire"> Prototype</a></h3>
 </div>
 <div class="div2">
   <h1>Trentoscott</h1>
@@ -113,12 +159,12 @@
 <div class="div3">
     <h1>Trent</h1>
     <h2>Coder and Chef Extrodinairé</h2>
-    <h3>trent@trentoscott.co</h3>
+    <h3><a class="linkthree" href="mailto:trent@trentoscott.co">trent@trentoscott.co</a></h3>
   </div>
 <div class="div4">
     <h1>Scott</h1>
     <h2>Tall, Stylish and a Nerd</h2>
-    <h3>scott@trentoscott.co</h3>
+    <h3><a class="linkfour" href="mailto:scott@trentoscott.co">scott@trentoscott.co</a></h3>
   </div>
 
 

@@ -1,7 +1,6 @@
 to do:
 
 - fill content
-- use a decent font (https://www.w3schools.com/css/css3_fonts.asp)
 - get headshots - animate?
-- refine palette (don't use #fffff text on red)
 - work out how to make site client-responsive
+- move stuff to a style sheet
