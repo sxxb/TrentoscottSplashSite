@@ -26,19 +26,26 @@
 /** Box Style **/
     .div1 {
       width: 50%;
-      height: 100vh;
-      background-color: #084a58;
-      float: left;
-      color: #fbfbfb;
-    }
-    .div2 {
-      width: 50%;
       float: left;
       height: 100vh;
       background-color: #ff7759;
       color: #414141;
     }
+    .div2 {
+      width: 50%;
+      height: 100vh;
+      background-color: #084a58;
+      float: left;
+      color: #fbfbfb;
+    }
     .div3 {
+      width: 50%;
+      float: left;
+      height: 100vh;
+      background-color: #4a87b2;
+      color: #fbfbfb;
+    }
+    .div4 {
       width: 50%;
       float: left;
       height: 100vh;
@@ -46,13 +53,7 @@
       clear: right;
       color: #414141;
     }
-    .div4 {
-      width: 50%;
-      float: left;
-      height: 100vh;
-      background-color: #4a87b2;
-      color: #fbfbfb;
-    }
+
     .divwide {
       width: 100%;
       float: left;
@@ -108,8 +109,8 @@
       color: #ff9f8a;
       -webkit-transition: color 1s; /* Safari */
       transition: color 1s;
-    }
-    a.linktwo:link {
+      }
+    a.linktwo:link, a.linktwo:link:visited {
       font-size: 22px;
       text-align: center;
       font-style: normal;
@@ -124,24 +125,9 @@
       color: #ff9f8a;
       -webkit-transition: color 1s; /* Safari */
       transition: color 1s;
-      }
+    }
+
     a.linkthree:link {
-      font-size: 22px;
-      text-align: center;
-      font-style: normal;
-      color: #414141;
-      text-decoration: none;
-      -webkit-transition: color 2s; /* Safari */
-      transition: color 2s;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    a.linkthree:link:hover {
-      color: #4a87b2;
-      -webkit-transition: color 1s; /* Safari */
-      transition: color 1s;
-    }
-    a.linkfour:link {
       font-size: 22px;
       text-align: center;
       font-style: normal;
@@ -152,8 +138,24 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-    a.linkfour:link:hover {
+    a.linkthree:link:hover {
       color: #f4c759;
+      -webkit-transition: color 1s; /* Safari */
+      transition: color 1s;
+    }
+    a.linkfour:link {
+      font-size: 22px;
+      text-align: center;
+      font-style: normal;
+      color: #414141;
+      text-decoration: none;
+      -webkit-transition: color 2s; /* Safari */
+      transition: color 2s;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    a.linkfour:link:hover {
+      color: #4a87b2;
       -webkit-transition: color 1s; /* Safari */
       transition: color 1s;
     }
@@ -196,26 +198,26 @@
 <body>
 
 
-<div class="div2">
+<div class="div1">
   <h1>Trentoscott</h1>
   <h2>We Make Apps</h2>
   <h3>est. 2017</h3>
   </div>
-  <div class="div1">
+  <div class="div2">
     <h1>Wildfire</h1>
     <h2>The All in One Safety Tool for Emergencies</h2>
-    <h3><a class="linkone" href="https://trentbowden.github.io/nasaSpaceApp/">Prototype</a></h3>
+    <h3><a class="linktwo" href="https://trentbowden.github.io/nasaSpaceApp/">Prototype</a></h3>
   </div>
 
-<div class="div4">
+<div class="div3">
     <h1>Scott</h1>
     <h2>Tall, Stylish and a Nerd</h2>
-    <h3><a class="linkfour" href="mailto:scott@trentoscott.co">scott@trentoscott.co</a></h3>
+    <h3><a class="linkthree" href="mailto:scott@trentoscott.co">scott@trentoscott.co</a></h3>
   </div>
-  <div class="div3">
+  <div class="div4">
       <h1>Trent</h1>
       <h2>Coder and Chef Extrodinairé</h2>
-      <h3><a class="linkthree" href="mailto:trent@trentoscott.co">trent@trentoscott.co</a></h3>
+      <h3><a class="linkfour" href="mailto:trent@trentoscott.co">trent@trentoscott.co</a></h3>
     </div>
 
 </body>
