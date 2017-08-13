@@ -33,7 +33,7 @@
     }
     .exitbuttoncontainer {
     margin-top: 40vh;
-    margin-left: 2vw;
+    margin-left: 3.5vw;
     }
     .exitbutton{
     font-size: 5vw;
@@ -56,7 +56,7 @@
     }
     .subtitle {
       margin-bottom: 2vh;
-      font-size: 2.5vw;
+      font-size: 2vw;
     }
     .byline {
       margin-bottom: 2vh;
@@ -85,9 +85,9 @@
     .sidebar{
       grid-area:sidebar;
       background-color: #eeeeee;
-      box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
-      -webkit-box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
-      -moz-box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
+      box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
+      -webkit-box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
+      -moz-box-shadow: 1px 0px 10px rgba(65,65,65,0.2);
       z-index: 1;
     }
 
@@ -101,7 +101,7 @@
 
     .sidebartitle{
       text-align: center;
-      font-size: 2.3vw;
+      font-size: 2.2vw;
     }
 
     .sidebarimagemask{
@@ -109,25 +109,27 @@
       margin-bottom: 2.5vh;
       overflow:hidden;
       border-radius: 60vw;
-      height:14vw;
-      weight:14vw;
+      height:10vw;
+      width:10vw;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .sidebarimage{
-      height:14vw;
-      weight:14vw;
+      height:10vw;
+      weight:10vw;
     }
 
     .sidebarlist {
       padding:1vw;
       font-size:1.5vw;
       padding-left: .5vw;
-
     }
 
     .sidebarlistcontent {
       padding-bottom: 2vh;
-      list-style-type: none;
+      display: block;
+
     }
 
     .sidebarlistcontent-final {
@@ -145,6 +147,33 @@
       color:#414141;
     }
 
+    .contentlist {
+      font-size: 2vw;
+      padding-bottom: 2vh;
+    }
+    #aboutme {
+      display:block;
+    }
+
+    #cv {
+      display:none;
+    }
+
+    #SmartTrikes {
+      display:none;
+    }
+
+    #Wildfire {
+      display:none;
+    }
+
+    #ArtificialIntelligence {
+      display:none;
+    }
+
+    #skills {
+      display:none;
+    }
 /**end sidebar**/
 
 </style>
@@ -153,40 +182,100 @@
   <div class="sidebar box">
     <div class="sidebarcontainer">
       <div class="sidebartitle">
-        Scott Belcher
+        Trent Bowden
       </div>
       <div class="sidebarimagemask">
-          <img class="sidebarimage" src="https://twibbon.com/content/images/system/default-image.jpg"></img>
+          <img class="sidebarimage" src="https://static1.squarespace.com/static/546ab38be4b06c7939156064/5547954ce4b01a9d5ada6731/579f1a821b631bd12f0ffcce/1470045046856/EcoCaddy_Portraits_-Trent-Bowden.jpg"></img>
       </div>
       <div class="sidebarlist">
-        <ul>
-          <li class="sidebarlistcontent" id="aboutme">About Me</li>
-          <li class="sidebarlistcontent" id="cv">CV</li>
-          <li class="sidebarlistcontent" id="photo">Photography</li>
-          <li class="sidebarlistcontent" id="design">Design</li>
-          <li class="sidebarlistcontent" id="marketing">Marketing</li>
-          <li class="sidebarlistcontent-final" id="skills">Skills</li>
+          <a class="sidebarlistcontent" id="listaboutme">About Me</a>
+          <a class="sidebarlistcontent" id="listcv">CV</a>
+          <a class="sidebarlistcontent" id="listsmarttrikes">Smart Trikes</a>
+          <a class="sidebarlistcontent" id="listwildfire">Wildfire</a>
+          <a class="sidebarlistcontent" id="listaiproject">Artificial Artilligence</a>
+          <a class="sidebarlistcontent-final" id="skills">Skills</a>
       </div>
       <div class="sidebarcontacts">
-        <a id="email" href="scott@trentoscott.co">contact</a>
+        <a id="email" href="trentb.business@gmail.com">Email Me</a>
+        <p> M: 0409 800 898
       </div>
     </div>
   </div>
-  <div class="content box" id="$PROJECTNAME">
-    <div class="title">Project Title</div>
-    <div class="subtitle">Project Subtitle</div>
-    <div class="byline">Authors, Clients, Context etc.</div>
+  <div class="content box" id="aboutme">
+    <div class="title">About Me</div>
     <div class="projectcontent">
-      To make this work, have multiple divs in the html with this format with the projects. Then, use javascript on the sidebar to change display:none to display:inline or display:block
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
+      All round great guy - Scott.
+    </div>
+  </div>
+  <div class="content box" id="cv">
+    <div class="title">CV</div>
+    <div class="projectcontent">
+      <h3>Awards</h3>
+
+      <b>First Place, NASA Space Apps Challenge [48hr Hackathon] (2017)</b><br>
+      Sole coder in a group of 2, to create WildFire (details in personal projects).<br>
+      <b>First Place, Moonshot X Build-A-Space-Business Award (2017)</b><br>
+      WildFire app recognised as startup opportunity, accepted into MoonshotX incubator.<br>
+      <b>Microsoft Innovation Center BizSpark award (2017)</b><br>
+      Receiving mentoring and facilities from Microsoft to further production of WildFire.<br>
+      <b>First Placed team at Microsoft MSFT3C coding challenge [3hr Hackathon] (2017)</b><br>
+      Part of the group of 3 that competed at The University of Adelaide.<br>
+      <b>NASA Space apps entry WildFire qualified for global round of judging (2017)</b><br>
+
+      <h3>Experience</h3>
+
+      <b>Teacher’s Assistant for Introduction to Programming, University of Adelaide  (2017-)</b><br>
+      Involved in course-related meetings, practical supervision and marking of students.<br>
+      <b>University of Adelaide Student Mentor (1-1 student tutoring, 2016 semester 1)</b><br>
+      Mentored a student through the course Introduction to Programming (Processing).<br>
+
+      <h3>Involvement</h3>
+
+      <b>Computer Science Committee, The University of Adelaide (2017-)</b><br>
+      Enthusiastic participation in the CS community, assisted in strengthening committee influence within the university.<br>
+      <b>Co-Host of The Big Day In tech conference (April 2017)</b><br>
+      Hosted in Adelaide only, BDI is a national careers conference aimed at students.<br>
+      <b>Math and Japanese Tutor (Jan 2016-current)</b><br>
+      Have assisted 2x Year 9/10 SACE Level students from C’s to an A average.<br>
+      <b>OZ Minerals Hackathon (2015)</b><br>
+      Used machine learning within a group of 8 to optimise elements of a mining site when given previous data of mine site operations. Hackathon lasted 72 Hours. My tasks included data interpretation, teaching group about the dataset, and head presenter.<br>
+    </div>
+  </div>
+  <div class="content box" id="SmartTrikes">
+    <div class="title">Smart Trikes</div>
+    <div class="subtitle">Android App Development</div>
+    <div class="byline">EcoCaddy</div>
+    <div class="projectcontent">
+      Working for local company EcoCaddy to create an Android app for tracking pedicabs. Tracking data posted to a php page, sending to an SQL database. Web back-end provides live location data of trikes.
+    </div>
+  </div>
+  <div class="content box" id="Wildfire">
+    <div class="title">Wildfire</div>
+    <div class="subtitle">Helping People in Bushfire Make Informed Decisions Quickly</div>
+    <div class="byline">Trentoscott</div>
+    <div class="projectcontent">
+      A web app, created with HTML/CSS/PHP/AJAX to help users in bushfire areas. WildFire collates data from alert based sources. Families save personal data between their accounts for fire safety plans, contacts, addresses. Learning games included for fire safety awareness. Team mate Scott Belcher headed design, while I coded.
+    </div>
+  </div>
+  <div class="content box" id="ArtificialIntelligence">
+    <div class="title">Artificial Intelligence</div>
+    <div class="subtitle">Harbin Institute of Technology and University of Adelaide</div>
+    <div class="byline">Harbin, China</div>
+    <div class="projectcontent">
+      Travelled with 7 UofA students to Harbin, China. Worked in groups with students of The Harbin Institute of Technology to complete an intensive AI course. This required breaking the language barrier, in combination with efficient learning of concepts.
+    </div>
+  </div>
+  <div class="content box" id="skills">
+    <div class="title">Skills</div>
+    <div class="projectcontent">
+      <ul>
+        <li class="contentlist">C++</li>
+        <li class="contentlist">Java</li>
+        <li class="contentlist">Processing</li>
+        <li class="contentlist">Git</li>
+        <li class="contentlist">SVN</li>
+        <li class="contentlist">PHP</li>
+      </ul>
     </div>
   </div>
   <div class="exit box">
