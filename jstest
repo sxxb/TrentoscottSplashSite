@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trentoscott</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $(".linkleft").click(function(){
+        $("#div3").animate({left: '0vw'});
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $(".linkright").click(function(){
+        $("#div4").animate({left: '-50vw'});
+    });
+});
+</script>
+
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Numans|Open+Sans">
+
+  <link rel="stylesheet"
+        href="/Users/scottbelcher/Projects/Trentoscott Splash/trentoscottSplashSite/trentoscott.css">
+        <style>
+        #div3 {
+            position:absolute;
+            left:-100vw;
+            width:150vw;
+            }
+        #div4 {
+            position:absolute;
+            right:-100vw;
+            width:150vw;
+            }
+        #container {position: relative;height:100vh;width:100vw;overflow: hidden;}
+        .content-container-left {padding-left:100vw;}
+        .content-container-right {padding-right:100vw;}
+        </style>
+</head>
+
+<body>
+
+<div id="container">
+  <div class="box" id="div3">
+    <div class="content-container-left content-container">
+      <h1>Scott</h1>
+      <h2>Design, Photography and Online Marketing</h2>
+      <h3><a id="linkthree" class="linkleft">See Scott's Work</a></h3>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  <div class="box" id="div4">
+    <div class="content-container-right content-container">
+      <h1>Trent</h1>
+      <h2>Foooooooooooooooooooooooood</h2>
+      <h3><a id="linkfour" class="linkright">See Trent's Work</a></h3>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

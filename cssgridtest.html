@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $(".s-link").click(function(){
+        $("#scott").animate({left: '0vw'});
+    });
+    });
+    </script>
+
+<script>
+  $(document).ready(function(){
+    $(".t-link").click(function(){
+        $("#trent").animate({left: '-50vw'});
+    });
+    });
+    </script>
+
+<style>
+body {margin:0px;}
+
+.wrapper {
+  display:grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-areas:
+    "introduction wildfire"
+    "scott trent";
+  overflow: hidden;
+  position:relative;
+  }
+
+.box {
+  height:100vh;
+}
+
+.content-container{
+  padding-left: 5vw;
+  padding-right:5vw;
+  text-align: center;
+}
+
+#introduction {
+  grid-area:introduction;
+  background-color: red;
+}
+
+#wildfire {
+  grid-area:wildfire;
+  background-color: blue;
+}
+#scott {
+  background-color: yellow;
+  display:grid;
+  grid-template-columns:20vw 80vw 50vw;
+  grid-template-areas:
+    "s-sidebar s-content s-intro";
+  position:absolute;
+  left:-100vw;
+  }
+
+#container-scott {
+  grid-area:scott;
+  }
+
+.s-intro {
+  grid-area:s-intro;
+  }
+
+.s-sidebar {
+  grid-area:s-sidebar;
+  background-color: grey;
+}
+
+.s-content {
+  grid-area:s-content;
+  background-color:white;
+}
+
+#trent {
+  background-color: green;
+  display:grid;
+  grid-template-columns:50vw 80vw 20vw;
+  grid-template-areas:
+    "t-intro t-content t-sidebar";
+  position:absolute;
+  left:50vw;
+}
+
+#container-trent {
+  grid-area:trent;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+  <div class="box" id="introduction">
+    <div class="content-container">
+      <h1>Trentoscott</h1>
+      <h2>We Make Apps and Stuff</h2>
+      <h3>est. 2017</h3>
+    </div>
+  </div>
+
+  <div class="box" id="wildfire">
+    <div class="content-container">
+      <h1>Wildfire</h1>
+      <h2>The All in One Safety Tool for Emergencies</h2>
+      <h3><a class="linktwo" href="https://trentbowden.github.io/nasaSpaceApp/">Prototype</a></h3>
+    </div>
+  </div>
+
+  <div class="box" id="container-scott">
+    <div class="box" id="scott">
+      <div class="content-container s-intro">
+        <h1>Scott</h1>
+        <h2>Design, Photography and Online Marketing</h2>
+        <h3><a class="s-link">See Scott's Work</a></h3>
+      </div>
+      <div class="content-container s-sidebar">
+        <h1>Test</h1>
+      </div>
+      <div class="content-container s-content">
+      </div>
+    </div>
+  </div>
+
+  <div class="box" id="container-trent">
+    <div class="box" id="trent">
+      <div class="content-container t-intro">
+        <h1>Trent</h1>
+        <h2>Back End Development, Project Management and Logistics</h2>
+        <h3><a class="t-link">See Trent's Work</a></h3>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
