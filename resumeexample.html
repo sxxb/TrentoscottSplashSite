@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+    body {
+      margin:0px;
+      font-family: sans-serif;
+      color:#414141;
+    }
+
+    .wrapper {
+      display:grid;
+      grid-template-columns: 20vw 70vw 10vw;
+      grid-template-areas:
+        "sidebar content exit";
+      overflow: hidden;
+      position:relative;
+      }
+
+    .box {
+      height:100vh;
+    }
+
+/**exit**/
+    .exit{
+      grid-area:exit;
+      background-color: #fafafa;
+    }
+    .exitbuttoncontainer {
+    margin-top: 40vh;
+    margin-left: 2vw;
+    }
+    .exitbutton{
+    font-size: 5vw;
+    text-decoration: none;
+    color: #414141;
+    }
+/**end exit**/
+
+/** content**/
+    .content{
+      grid-area:content;
+      background-color: #fafafa;
+      padding-left: 3vw;
+    }
+
+    .title{
+      margin-bottom: 2vh;
+      margin-top:3vh;
+      font-size: 4vw;
+    }
+    .subtitle {
+      margin-bottom: 2vh;
+      font-size: 2.5vw;
+    }
+    .byline {
+      margin-bottom: 2vh;
+      font-size: 1.2vw;
+      color: #888;
+    }
+    .projectcontent {
+      overflow-y: scroll;
+      height:70vh;
+    }
+
+/**end content**/
+
+
+/**sidebar**/
+    .sidebar{
+      grid-area:sidebar;
+      background-color: #eeeeee;
+      box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
+      -webkit-box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
+      -moz-box-shadow: 1px 0px 5px rgba(65,65,65,0.5);
+      z-index: 1;
+    }
+
+    .sidebarcontainer{
+      margin-left: 3vw;
+      margin-right: 3vw;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      height:90vh;
+    }
+
+    .sidebartitle{
+      text-align: center;
+      font-size: 2.3vw;
+    }
+
+    .sidebarimagemask{
+      margin-top: 2.5vh;
+      margin-bottom: 2.5vh;
+      overflow:hidden;
+      border-radius: 60vw;
+      height:14vw;
+      weight:14vw;
+    }
+
+    .sidebarimage{
+      height:14vw;
+      weight:14vw;
+    }
+
+    .sidebarlist {
+      padding:1vw;
+      font-size:1.5vw;
+      padding-left: .5vw;
+
+    }
+
+    .sidebarlistcontent {
+      padding-bottom: 2vh;
+      list-style-type: none;
+    }
+
+    .sidebarlistcontent-final {
+      list-style-type: none;
+    }
+    .sidebarcontacts {
+
+      padding:1vw;
+      font-size: 1.2vw;
+      text-align: center;
+      padding-top: 8vh;
+    }
+
+    #email {
+      color:#414141;
+    }
+
+/**end sidebar**/
+
+</style>
+</head>
+<div class="wrapper">
+  <div class="sidebar box">
+    <div class="sidebarcontainer">
+      <div class="sidebartitle">
+        Scott Belcher
+      </div>
+      <div class="sidebarimagemask">
+          <img class="sidebarimage" src="https://twibbon.com/content/images/system/default-image.jpg"></img>
+      </div>
+      <div class="sidebarlist">
+        <ul>
+          <li class="sidebarlistcontent" id="aboutme">About Me</li>
+          <li class="sidebarlistcontent" id="cv">CV</li>
+          <li class="sidebarlistcontent" id="photo">Photography</li>
+          <li class="sidebarlistcontent" id="design">Design</li>
+          <li class="sidebarlistcontent" id="marketing">Marketing</li>
+          <li class="sidebarlistcontent-final" id="skills">Skills</li>
+      </div>
+      <div class="sidebarcontacts">
+        <a id="email" href="scott@trentoscott.co">contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="content box" id="$PROJECTNAME">
+    <div class="title">Project Title</div>
+    <div class="subtitle">Project Subtitle</div>
+    <div class="byline">Authors, Clients, Context etc.</div>
+    <div class="projectcontent">
+      To make this work, have multiple divs in the html with this format with the projects. Then, use javascript on the sidebar to change display:none to display:inline or display:block
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+      <h1>hello world</h1>
+    </div>
+  </div>
+  <div class="exit box">
+    <div class="exitbuttoncontainer">
+      <a href="javascript:" class="exitbutton">x</a>
+    </div>
+  </div>
+</div>
