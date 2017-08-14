@@ -65,18 +65,21 @@
       font-size: 4vw;
     }
     .subtitle {
-      margin-bottom: 2vh;
+      margin-bottom: 1.5vh;
       font-size: 2vw;
+      font-style: italic;
     }
     .byline {
-      margin-bottom: 2vh;
+      margin-bottom: 6vh;
       font-size: 1.2vw;
       color: #888;
     }
     .projectcontent {
       overflow-y: scroll;
-      height:70vh;
+      height:60vh;
       padding-right: 5px;
+      border-top: 4px solid #414141;
+      padding-top: 6vh;
     }
   /**end content**/
 
@@ -134,6 +137,7 @@
     .sidebarlistcontent-final {
       list-style-type: none;
     }
+
     .sidebarcontacts {
 
       padding:1vw;
@@ -174,17 +178,22 @@
       display:none;
     }
 
+    a {
+      color: #414141;
+
+    }
   /**end sidebar**/
 
   /**intro**/
     .intro {
       grid-area:intro;
       background-color: red;
-      padding-top: 35vh;
+
     }
     .introcontainer {
       margin: 5vw;
       text-align: center;
+      padding-top: 25vh;
     }
   /**end intro**/
   </style>
@@ -206,6 +215,84 @@
     });
   });
   </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listaboutme').click(function(){
+        $('#aboutme').css({display:'block'})
+        $('#cv').css({display:'none'})
+        $('#SmartTrikes').css({display:'none'})
+        $('#Wildfire').css({display:'none'})
+        $('#ArtificialIntelligence').css({display:'none'})
+        $('#skills').css({display:'none'})
+    });
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listcv').click(function(){
+        $('#aboutme').css({display:'none'})
+        $('#cv').css({display:'block'})
+        $('#SmartTrikes').css({display:'none'})
+        $('#Wildfire').css({display:'none'})
+        $('#ArtificialIntelligence').css({display:'none'})
+        $('#skills').css({display:'none'})
+    });
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listsmarttrikes').click(function(){
+        $('#aboutme').css({display:'none'})
+        $('#cv').css({display:'none'})
+        $('#SmartTrikes').css({display:'block'})
+        $('#Wildfire').css({display:'none'})
+        $('#ArtificialIntelligence').css({display:'none'})
+        $('#skills').css({display:'none'})
+    });
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listwildfire').click(function(){
+        $('#aboutme').css({display:'none'})
+        $('#cv').css({display:'none'})
+        $('#SmartTrikes').css({display:'none'})
+        $('#Wildfire').css({display:'block'})
+        $('#ArtificialIntelligence').css({display:'none'})
+        $('#skills').css({display:'none'})
+    });
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listaiproject').click(function(){
+        $('#aboutme').css({display:'none'})
+        $('#cv').css({display:'none'})
+        $('#SmartTrikes').css({display:'none'})
+        $('#Wildfire').css({display:'none'})
+        $('#ArtificialIntelligence').css({display:'block'})
+        $('#skills').css({display:'none'})
+    });
+  });
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('#listskills').click(function(){
+        $('#aboutme').css({display:'none'})
+        $('#cv').css({display:'none'})
+        $('#SmartTrikes').css({display:'none'})
+        $('#Wildfire').css({display:'none'})
+        $('#ArtificialIntelligence').css({display:'none'})
+        $('#skills').css({display:'block'})
+    });
+  });
+  </script>
 </head>
 <body>
 <div class="everything">
@@ -214,7 +301,7 @@
     <div class="introcontainer">
       <h1>Trent</h1>
       <h3>Awesome Developer and Great Playlist Creator</h3>
-      <h4 id="linkleft">See Trent's Work</h4>
+      <a href="javascript:" id="linkleft">See Trent's Work</a>
     </div>
     </div>
   <div class="sidebar box">
@@ -226,12 +313,12 @@
           <img class="sidebarimage" src="https://static1.squarespace.com/static/546ab38be4b06c7939156064/5547954ce4b01a9d5ada6731/579f1a821b631bd12f0ffcce/1470045046856/EcoCaddy_Portraits_-Trent-Bowden.jpg"></img>
       </div>
       <div class="sidebarlist">
-          <a class="sidebarlistcontent" id="listaboutme">About Me</a>
-          <a class="sidebarlistcontent" id="listcv">CV</a>
-          <a class="sidebarlistcontent" id="listsmarttrikes">Smart Trikes</a>
-          <a class="sidebarlistcontent" id="listwildfire">Wildfire</a>
-          <a class="sidebarlistcontent" id="listaiproject">Artificial Artilligence</a>
-          <a class="sidebarlistcontent-final" id="skills">Skills</a>
+          <a href="javascript:" class="sidebarlistcontent" id="listaboutme">About Me</a>
+          <a href="javascript:" class="sidebarlistcontent" id="listcv">CV</a>
+          <a href="javascript:" class="sidebarlistcontent" id="listsmarttrikes">Smart Trikes</a>
+          <a href="javascript:" class="sidebarlistcontent" id="listwildfire">Wildfire</a>
+          <a href="javascript:" class="sidebarlistcontent" id="listaiproject">Artificial Intelligence</a>
+          <a href="javascript:" class="sidebarlistcontent-final" id="listskills">Skills</a>
       </div>
       <div class="sidebarcontacts">
         <a id="email" href="trentb.business@gmail.com">Email Me</a>
@@ -241,12 +328,16 @@
   </div>
   <div class="content box" id="aboutme">
     <div class="title">About Me</div>
+    <div class="subtitle">&nbsp;</div>
+    <div class="byline">&nbsp;</div>
     <div class="projectcontent">
       All round great guy - Scott.
     </div>
   </div>
   <div class="content box" id="cv">
     <div class="title">CV</div>
+    <div class="subtitle">&nbsp;</div>
+    <div class="byline">&nbsp;</div>
     <div class="projectcontent">
       <h3>Awards</h3>
 
@@ -289,7 +380,7 @@
   </div>
   <div class="content box" id="Wildfire">
     <div class="title">Wildfire</div>
-    <div class="subtitle">Helping People in Bushfire Make Informed Decisions Quickly</div>
+    <div class="subtitle">Helping People in Bushfire Situations Make Informed Decisions Quickly</div>
     <div class="byline">Trentoscott</div>
     <div class="projectcontent">
       A web app, created with HTML/CSS/PHP/AJAX to help users in bushfire areas. WildFire collates data from alert based sources. Families save personal data between their accounts for fire safety plans, contacts, addresses. Learning games included for fire safety awareness. Team mate Scott Belcher headed design, while I coded.
@@ -305,6 +396,8 @@
   </div>
   <div class="content box" id="skills">
     <div class="title">Skills</div>
+    <div class="subtitle">&nbsp;</div>
+    <div class="byline">&nbsp;</div>
     <div class="projectcontent">
       <ul>
         <li class="contentlist">C++</li>
@@ -325,3 +418,4 @@
   </div>
 </div>
 </body>
+</html>
